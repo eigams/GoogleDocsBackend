@@ -18,5 +18,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Classes/*.{h,m}'
   s.dependency 'Mantle', '~> 1.3.1'
-  s.dependency 'AFNetworking', '~> 2.1.0'
+  s.dependency 'AFNetworking', '~> 1.3.0'
 end
