@@ -47,6 +47,7 @@
     NSMutableURLRequest *request = [httpClient requestWithMethod:@"GET"
                                                             path:string
                                                       parameters:nil];
+    [request setCachePolicy:NSURLRequestReturnCacheDataElseLoad];
     AFHTTPRequestOperation *operation = [[AFJSONRequestOperation alloc] initWithRequest:request];
     [httpClient registerHTTPOperationClass:[AFHTTPRequestOperation class]];
     
